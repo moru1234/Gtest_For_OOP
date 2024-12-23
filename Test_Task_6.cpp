@@ -30,7 +30,7 @@ public:
 TEST(ConstructorDestructorTest, subTestConstructor)
 {
     //Datalogger log1;
-    Datalogger* log1 = new Datalogger;
+    Datalogger* log1 = new Datalogger;// Create a Datalogger object dynamically. A new Logger object is created on the heap.
 
     EXPECT_EQ(log1->log, "Data Logg constructor");
 }
